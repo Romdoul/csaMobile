@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayLighten"
+    tools:context="com.totalmaster.csa.EducationBackgroundActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="តើអ្នកចង់ទទួលការបណ្តុះបណ្តាលទេ? | Do you want to get train?"
+            android:textSize="@dimen/textSize"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/training_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:background="@drawable/border_shape"
+                    android:text="បាទ/ចាស | Yes"
+                    android:textSize="@dimen/textSize"
+                    android:padding="@dimen/radioButton_size"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+                <RadioButton
+                    android:id="@+id/training_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/border_shape"
+                    android:button="@null"
+                    android:padding="@dimen/radioButton_size"
+                    android:text="ទេ | No"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/validate_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textColor="@color/validate"
+                android:layout_below="@id/training" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/traintextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:text="របៀបនៃការបណ្តុះបណ្តាល | How do you want to get train?"
+                android:textSize="@dimen/textSize" />
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/how_to_get_train"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/traintextview"/>
+            <TextView
+                android:id="@+id/validate_how_to_get_train"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textColor="@color/validate"
+                android:layout_below="@id/how_to_get_train" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="រយៈពេលបណ្តុះបណ្តាល | Training duration"
+            android:textSize="@dimen/textSize"
+            android:paddingBottom="7dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <RadioGroup
+                android:id="@+id/training_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/training_duration_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:button="@null"
+                    android:background="@drawable/border_shape"
+                    android:text="3ខែ\n3 Months"
+                    android:textSize="@dimen/textSize"
+                    android:padding="@dimen/radioButton_size"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+                <RadioButton
+                    android:id="@+id/training_duration_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/border_shape"
+                    android:button="@null"
+                    android:padding="@dimen/radioButton_size"
+                    android:text="6ខែ\n6 Months"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                <RadioButton
+                    android:id="@+id/training_duration_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/border_shape"
+                    android:button="@null"
+                    android:padding="@dimen/radioButton_size"
+                    android:text="9ខែ\n9 Months"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/validate_training_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/textSize_validate"
+            android:textColor="@color/validate"
+            android:layout_below="@id/training_duration" />
+
+        <Button
+            android:id="@+id/btnSummitEducationBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:textSize="@dimen/textSize_button"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/mysubmitbutton"/>
+    </LinearLayout>
+
+</ScrollView>

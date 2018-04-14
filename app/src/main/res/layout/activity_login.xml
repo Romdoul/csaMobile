@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayLighten"
+    tools:context="com.totalmaster.csa.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:src="@drawable/ic_logo_full" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:textSize="@dimen/textSize"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:hint="ឈ្មោះ | Username"
+                android:background="@drawable/border_shape"/>
+            <TextView
+                android:id="@+id/usernameValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:textColor="@color/yellow"
+                android:textStyle="italic" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:ems="10"
+                android:hint="លេខកូដសំងាត់ | Password"
+                android:textSize="@dimen/textSize"
+                android:inputType="textPassword"
+                android:background="@drawable/border_shape"/>
+            <TextView
+                android:id="@+id/passwordValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:textColor="@color/yellow"
+                android:textStyle="italic" />
+            <Button
+                android:id="@+id/btnSummitLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/login"
+                android:textSize="@dimen/textSize_button"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mysubmitbutton" />
+            <Button
+                android:id="@+id/btnCreateAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:text="@string/createAccount"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/gray"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

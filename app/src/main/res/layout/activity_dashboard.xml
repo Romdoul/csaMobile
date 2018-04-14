@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="com.totalmaster.csa.DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/blueLight">
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_logout"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:background="@color/blueLight"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_background" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="TOTOAL MASTER CO.LTD\nការងារកំពុងរង់ចាំអ្នក!!\nJob is waiting for you!!"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="7"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/grayLighten">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/register"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:drawableTop="@drawable/ic_register"
+                    android:layout_weight="1"
+                    android:text="១.ចុះឈ្មោះ\nRegister"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/desired-con"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:drawableTop="@drawable/ic_desired_condition"
+                    android:layout_weight="1"
+                    android:text="២.លក្ខខណ្ឌដែលចង់បាន\nDesired condition"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/work-condition"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:drawableTop="@drawable/ic_work_detail"
+                    android:layout_weight="1"
+                    android:text="៣.ស្ថានភាពបច្ចុប្បន្ន\nCurrent situation"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/family"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:drawableTop="@drawable/ic_family"
+                    android:layout_weight="1"
+                    android:text="៤.គ្រួសារ\nFamily"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/education"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:drawableTop="@drawable/ic_education"
+                    android:layout_weight="1"
+                    android:text="៥.ការបណ្តុះបណ្តាល\nTraining"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/evaluation"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:drawableTop="@drawable/ic_evaluation"
+                    android:layout_weight="1"
+                    android:text="៦.ការវាយតម្លៃ\nEvaluation"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <Button
+                    android:padding="5dp"
+                    android:id="@+id/co-worker"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:drawableTop="@drawable/ic_coworker"
+                    android:layout_weight="1"
+                    android:text="៧.មិត្តរួមការងារ\nCo-worker"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="2">
+                <TableRow>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="ក្រុមហ៊ុន -\nCompany"
+                        android:padding="3dip"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text=": JTVD angkor"
+                        android:padding="3dip" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="អាសយដ្ឋាន -\nAddress"
+                        android:padding="3dip"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text=": #162,Group6,Slorkram Village,Slorkram Commune,Siem Reap Province"
+                        android:padding="3dip" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="លេខទូរសព្ទ -\nPhone number"
+                        android:padding="3dip"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text=": +8551566451"
+                        android:padding="3dip" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="អុីមែល -\nE-mail"
+                        android:padding="3dip"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text=": Jtvdanhkor2018@gmail.com"
+                        android:padding="3dip" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

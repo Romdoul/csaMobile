@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayLighten"
+    tools:context="com.totalmaster.csa.WorkingConditionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/workLocationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ទីតាំងដែលអ្នកចង់ធ្វើការ | Where do you want to work at?"
+                android:textSize="@dimen/textSize"
+                android:paddingBottom="7dp"/>
+            <EditText
+                android:id="@+id/workLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="ទីតាំងដែលអ្នកចង់ធ្វើការ"
+                android:textSize="@dimen/textSize_placeholder"
+                android:padding="@dimen/padding_editText"
+                android:background="@drawable/border_shape"
+                android:layout_below="@id/workLocationTextView" />
+            <TextView
+                android:id="@+id/validate_work_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textColor="@color/validate"
+                android:layout_below="@id/workLocation" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/workingPositionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:text="តើអ្នកចង់ធ្វើការងារបែបណា? | What kind of job you want to work?"
+                android:textSize="@dimen/textSize"/>
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/workingPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workingPositionTextView"/>
+            <TextView
+                android:id="@+id/validate_working_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textColor="@color/validate"
+                android:layout_below="@id/workingPosition"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/expectedSalaryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7dp"
+            android:text="ប្រាក់ខែរំពឹងទុកប្រចាំខែ | What is your expected salary?"
+            android:textSize="@dimen/textSize"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/expected_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/expected_salary_100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/border_shape"
+                    android:button="@null"
+                    android:padding="@dimen/radioButton_size"
+                    android:text="100$"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="0.25"
+                    android:gravity="center" />
+
+                <RadioButton
+                    android:id="@+id/expected_salary_150"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/border_shape"
+                    android:button="@null"
+                    android:padding="@dimen/radioButton_size"
+                    android:text="150$"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="0.25"
+                    android:gravity="center" />
+
+                <RadioButton
+                    android:id="@+id/expected_salary_175"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/border_shape"
+                    android:button="@null"
+                    android:padding="@dimen/radioButton_size"
+                    android:text="175$"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="0.25"
+                    android:gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/expected_salary_200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/border_shape"
+                    android:button="@null"
+                    android:padding="@dimen/radioButton_size"
+                    android:text="200$"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="0.25"
+                    android:gravity="center"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/validated_expect_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textColor="@color/validate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/gettingSalaryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="របៀបដើម្បីទទួលបានប្រាក់ខែ | How so you want to receive salary?"
+                android:textSize="@dimen/textSize"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="7dp">
+                <RadioGroup
+                    android:id="@+id/receive_salary_how"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/receive_salary_cash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:button="@null"
+                        android:background="@drawable/border_shape"
+                        android:text="By cash"
+                        android:textSize="@dimen/textSize"
+                        android:padding="@dimen/radioButton_size"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <RadioButton
+                        android:id="@+id/receive_salary_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/border_shape"
+                        android:button="@null"
+                        android:padding="@dimen/radioButton_size"
+                        android:text="By bank"
+                        android:textSize="@dimen/textSize"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/validate_getting_salary_how"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textColor="@color/validate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/receiveSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="When do you want to receive salary?"
+                android:textSize="@dimen/textSize"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:weightSum="3"
+                android:layout_marginTop="7dp">
+                <RadioGroup
+                    android:id="@+id/receive_salary_when"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/receive_salary_everyDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:button="@null"
+                        android:background="@drawable/border_shape"
+                        android:text="Daily"
+                        android:textSize="@dimen/textSize"
+                        android:padding="@dimen/radioButton_size"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <RadioButton
+                        android:id="@+id/receive_salary_everyWeek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/border_shape"
+                        android:button="@null"
+                        android:padding="@dimen/radioButton_size"
+                        android:text="Weekly"
+                        android:textSize="@dimen/textSize"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <RadioButton
+                        android:id="@+id/receive_salary_everyMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/border_shape"
+                        android:button="@null"
+                        android:padding="@dimen/radioButton_size"
+                        android:text="Monthly"
+                        android:textSize="@dimen/textSize"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/validate_receive_salary_when"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textColor="@color/validate" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSummitDesiredCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/done"
+            android:textSize="@dimen/textSize_button"
+            android:textColor="@color/white"
+            android:background="@drawable/mysubmitbutton"/>
+    </LinearLayout>
+    
+
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TotalMaster</string>
+    <string name="register">ចុះឈ្មោះ | Register</string>
+    <string name="login">ចូល | Login</string>
+    <string name="desiredCondition">លក្ខខណ្ឌដែលចង់បាន | Desired Condition</string>
+    <string name="currentCondition">ស្ថានភាពបច្ចុប្បន្ន | Current Situation</string>
+    <string name="educationBackground">ការបណ្តុះបណ្តាល | Training</string>
+    <string name="family">ព័ត៌មានអំពីគ្រួសារ | Family</string>
+    <string name="evaluation">ការវាយតម្លៃ | Evaluation</string>
+    <string name="comment">ការបញ្ចេញមតិ | Comment</string>
+    <string name="coWorker">មិត្តរួមការងារ | Co-worker</string>
+    <string name="evaluate">វាយតម្លៃ\nEvaluate</string>
+    <string name="evaluateCoWorker">វាយតម្លៃមិត្តរួមការងារ | Evaluate your co-worker</string>
+    <string name="reliability">ភាពអាចទុកចិត្តបាន\nReliability</string>
+    <string name="hardWorking">ភាពខិតខំធ្វើការ\nHard working</string>
+    <string name="technicalLevel">កម្រិតបច្ចេកទេស\nTechnical level</string>
+    <string name="leadership">ភាពជាអ្នកដឹកនាំ\nLeadership</string>
+    <string name="name">ប៊ូ រំដួល</string>
+    <string name="rateIntro">សូមជ្រើសរើសក្នុងចន្លោះពី ១ ដល់ ៥\nRate on scale of 1 to 5</string>
+    <string name="done">យល់ព្រម | Done</string>
+    <string name="usernameValidation">សូមវាយបញ្ចូលឈ្មោះអោយបានត្រឹមត្រូវ | Please input your username</string>
+    <string name="passwordValidation">សូមវាយបញ្ចូលលេខសំងាត់អោយបានត្រឹមត្រូវ | Please input your password</string>
+    <string name="confirmPasswordValidation">ពាក្យសម្ងាត់មិនត្រូវគ្នា | Password does not match</string>
+    <string name="fieldValidation">សូមបំពេញចន្លោះ | Please input here</string>
+    <string name="authenticating">កំពុងផ្ទៀងផ្ទាត់\nAuthenticating</string>
+    <string name="createAccount">បង្កើតគណនីថ្មី\nCreate new account</string>
+
+</resources>

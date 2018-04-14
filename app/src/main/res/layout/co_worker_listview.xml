@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border_shape"
+            android:clickable="true">
+            <TextView
+                android:id="@+id/co_worker_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/name"
+                android:textColor="@color/blueGrayDark"
+                android:layout_centerVertical="true" />
+            <Button
+                android:id="@+id/evaluate_co_worker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/evaluate"
+                android:background="@drawable/border_shape"
+                android:textColor="@color/blueLight"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

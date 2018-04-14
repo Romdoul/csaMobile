@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayLighten"
+    tools:context="com.totalmaster.csa.FamilyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/memberInFamilyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="តើអ្នកមានសមាជិកប៉ុន្មាននាក់នៅក្នុងគ្រួសារ? | How many members in your family?"
+                android:textSize="@dimen/textSize"/>
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/memberInFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/memberInFamilyTextView"/>
+            <TextView
+                android:id="@+id/validate_member_in_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textStyle="italic"
+                android:textColor="@color/validate"
+                android:layout_below="@id/memberInFamily" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/fatherJobTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="មុខរបររបស់ឪពុកអ្នក | Your father's job"
+                android:textSize="@dimen/textSize"/>
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/fatherJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/fatherJobTextView"/>
+            <TextView
+                android:id="@+id/validate_father_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textStyle="italic"
+                android:textColor="@color/validate"
+                android:layout_below="@id/fatherJob" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/numberOfSiblingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ចំនួននៃបងប្អូន | No. of your siblings"
+                android:textSize="@dimen/textSize"/>
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/numberOfSibling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/numberOfSiblingTextView"/>
+            <TextView
+                android:id="@+id/validate_number_of_sibling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textStyle="italic"
+                android:textColor="@color/validate"
+                android:layout_below="@id/numberOfSibling" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/numberOfRelativeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ចំនួននៃសាច់ញាតិ | No. of your relative"
+                android:textSize="@dimen/textSize"/>
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/numberOfRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/numberOfRelativeTextView"/>
+            <TextView
+                android:id="@+id/validate_number_of_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textStyle="italic"
+                android:textColor="@color/validate"
+                android:layout_below="@id/numberOfRelative" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/currentAssetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ទ្រព្វសម្បត្តិបច្ចុប្បន្ន | Current asset"/>
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/currentAsset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/currentAssetTextView"/>
+            <TextView
+                android:id="@+id/validate_current_asset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize_validate"
+                android:textStyle="italic"
+                android:textColor="@color/validate"
+                android:layout_below="@id/currentAsset" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSummitFamilyDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/done"
+            android:textSize="@dimen/textSize_button"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/mysubmitbutton"/>
+    </LinearLayout>
+
+</ScrollView>
